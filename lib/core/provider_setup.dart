@@ -15,13 +15,13 @@ List<SingleChildCloneableWidget> independentServices = [
 
 List<SingleChildCloneableWidget> dependentServices = [
   ProxyProvider<Api, AuthenticationService>(
-    builder: (context, api, authenticationService) =>
+    update: (context, api, authenticationService) =>
         AuthenticationService(api: api),
   )
 ];
 
 List<SingleChildCloneableWidget> uiConsumableProviders = [
   StreamProvider<UserModel>(
-    builder: (context) => Provider.of<AuthenticationService>(context, listen: false).user,
+    create: (context) => Provider.of<AuthenticationService>(context, listen: false).user,
   )
 ];
