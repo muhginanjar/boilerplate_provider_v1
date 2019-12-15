@@ -3,7 +3,7 @@ import 'dart:async';
 
 import 'package:boilerplate_provider_v1/core/models/userModel.dart';
 
-import 'apiServices.dart';
+import 'api_service.dart';
 
 class AuthenticationService {
     final Api _api;

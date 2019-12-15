@@ -1,9 +1,13 @@
+import 'package:boilerplate_provider_v1/ui/views/home_view.dart';
+import 'package:boilerplate_provider_v1/ui/views/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:boilerplate_provider_v1/core/constants/namedRoute.dart';
 
-import 'views/home_view.dart';
-import 'views/login_view.dart';
+class RoutePaths {
+  static const String Login = 'login';
+  static const String Home = 'home';
+  static const String Post = 'post';
+}
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {

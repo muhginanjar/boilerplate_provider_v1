@@ -1,7 +1,7 @@
 import 'package:provider/provider.dart';
 import 'package:boilerplate_provider_v1/core/models/userModel.dart';
-import 'package:boilerplate_provider_v1/core/services/apiServices.dart';
-import 'package:boilerplate_provider_v1/core/services/authenticationServices.dart';
+import 'package:boilerplate_provider_v1/core/services/api_service.dart';
+import 'package:boilerplate_provider_v1/core/services/authentication_service.dart';
 
 List<SingleChildCloneableWidget> providers = [
   ...independentServices,

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'core/constants/namedRoute.dart';
+import 'core/constants/router.dart';
 import 'core/provider_setup.dart';
-import 'ui/router.dart';
 
 
 void main() => runApp(Boilerplateproviderv1());
