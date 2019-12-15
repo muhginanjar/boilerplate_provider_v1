@@ -4,7 +4,7 @@ A boilerplate project created in flutter using Provider v3.2.0 .
 
 ## Getting Started
 
-The Boilerplate contains the minimal implementation required to create a new library or project. The repository code is preloaded with some basic components like basic app architecture, app theme, constants and required dependencies to create a new project. By using boiler plate code as standard initializer, we can have same patterns in all the projects that will inherit it. This will also help in reducing setup & development time by allowing you to use same code pattern and avoid re-writing from scratch.
+Boilerplate ini menggunakan implementasi standar yang dibutuhkan untuk membuat sebuah project baru. repo pada folder lib sudah diisi dengan komponen dasar seperti arsitektur project, constants, shared style dan beberapa dependensi yang dibutuhkan lainnya. Diharapkan dengan adanya boilerplate ini dapat mempermudah developer untuk mengerjakan project baru tanpa harus membuatnya dari awal dan sudah memiliki standarisasi yang dapat disepakati dengan developer lainnya yang bekerja pada project yang sama.
 
 Boilerplate ini menggunakan arsitektur MVVM dan State Management Provider
 
@@ -50,7 +50,6 @@ Agar mempersingkat waktu untuk membuat model, kamu dapat menggunakan converter d
 https://javiercbk.github.io/json_to_dart/
 
 credit to: Javier Lecuona
-
 ```
 ### services/
 services berisi berbagai fungsi dan service yang digunakan untuk mengatur data pada project. Untuk saat ini services terdiri dari function api dan function authentication
@@ -89,7 +88,6 @@ Clone atau download repo di bawah ini:
 
 ```
 https://github.com/reyhanjav/boilerplate_provider_v1.git
-
 ```
 
 **Step 2:**
@@ -98,17 +96,14 @@ Masuk ke dalam folder repo dan jalankan command di bawah ini:
 
 ``` 
 flutter pub get 
-
 ```
 
 ``` 
 flutter doctor -v
-
 ```
 
 ``` 
 flutter run -v
-
 ```
 
 **Step 3:**
@@ -126,7 +121,6 @@ Secara default penaman pada project ini menggunakan bahasa inggris. Jika ingin m
 
 ```
 Harap Pastikan Seluruh penamaan tidak menggunakan 2 bahasa yang berbeda untuk mempermudah developer lain untuk memahaminya
-
 ```
 ### CamelCase
 CamelCase digunakan pada penamaan function ,dan penamaan variabel. Penamaan variabel maksimal terdiri dari 3 kata dengan syarat hanya 1 kata saja yang disingkat (misal : jmlBuahTotal)
