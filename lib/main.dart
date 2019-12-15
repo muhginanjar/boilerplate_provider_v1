@@ -6,15 +6,15 @@ import 'core/provider_setup.dart';
 import 'ui/router.dart';
 
 
-void main() => runApp(Boilerplate_provider_v1());
+void main() => runApp(Boilerplateproviderv1());
 
-class Boilerplate_provider_v1 extends StatelessWidget {
+class Boilerplateproviderv1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: providers,
       child: MaterialApp(
-        title: 'Digkontrol',
+        title: 'Boilerplate Provider',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
