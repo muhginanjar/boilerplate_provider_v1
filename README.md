@@ -186,13 +186,13 @@ external widget yang digunakan pada boilerplate ini:
 - ***prebuild state management***
 - ***MVVM Architecture***
 - ***hex color reader with pigment***
-- ***cache service with sharedpref***
+- ***service handler with get_it***
+- ***storage service with sharedpref***
 - ***connectivity status***
 
 ## upcoming feature
 
 - ***interceptor example***
 - ***lifecycle manager***
-- ***service handler with get_it***
 - ***background fetch function***
-- ***change sharedpref to hive for cache***
+- ***change sharedpref to hive for storage***
