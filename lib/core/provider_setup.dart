@@ -10,11 +10,11 @@ List<SingleChildCloneableWidget> providers = [
 ];
 
 List<SingleChildCloneableWidget> independentServices = [
-  Provider.value(value: Api())
+  Provider.value(value: ApiService())
 ];
 
 List<SingleChildCloneableWidget> dependentServices = [
-  ProxyProvider<Api, AuthenticationService>(
+  ProxyProvider<ApiService, AuthenticationService>(
     update: (context, api, authenticationService) =>
         AuthenticationService(api: api),
   )

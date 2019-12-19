@@ -1,5 +1,5 @@
+import 'package:boilerplate_provider_v1/core/constants/router.dart';
 import 'package:flutter/material.dart';
-import 'package:boilerplate_provider_v1/core/constants/namedRoute.dart';
 import 'package:boilerplate_provider_v1/ui/shared/styles/ui_helpers.dart';
 import 'package:boilerplate_provider_v1/ui/widgets/reusable/button_widget.dart';
 

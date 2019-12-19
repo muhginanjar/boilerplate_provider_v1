@@ -8,6 +8,8 @@ Boilerplate ini menggunakan implementasi standar yang dibutuhkan untuk membuat s
 
 Boilerplate ini menggunakan arsitektur MVVM dan State Management Provider
 
+## Architecture
+
 Berikut struktur folder project yang digunakan
 
 ```
@@ -36,12 +38,12 @@ core/
     |- base_viewmodel.dart
 |- provider_setup.dart
 ```
-### constants/
+***constants/***
 Folder constants terdiri dari variabel fungsi dan variabel router yang seharusnya didefine dari awal project
 
 Folder constants ini juga dapat diisi dengan variabel url API yang bersifat [private] yang nantinya harus dilampirkan pada .gitignore
 
-### models/
+***models/***
 models berisi model / POJO (Plain Old Java Object) untuk mendefine variabel json dari REST API.
 
 Agar mempersingkat waktu untuk membuat model, kamu dapat menggunakan converter di bawah ini untuk mengkoversi json menjadi model dart:
@@ -51,13 +53,13 @@ https://javiercbk.github.io/json_to_dart/
 
 credit to: Javier Lecuona
 ```
-### services/
+***services/***
 services berisi berbagai fungsi dan service yang digunakan untuk mengatur data pada project. Untuk saat ini services terdiri dari function api dan function authentication
 
-### viewmodels/
+***viewmodels/***
 Viewmodels berfungsi sebagai penghubung antara core dengan ui. Viewmodel merupakan ekstensi dari base_model yang terdiri dari state dasar dalam pemanggilan API (busy or !busy) dan state lainnya
 
-### provider_setup.dart
+***provider_setup.dart***
 provider berisi hasil define dari service yang ada pada folder services. Jika ada services yang ditambahkan, harus didefine juga pada file ini
 
 ### UI
@@ -78,6 +80,17 @@ ui/
         |- button_widget.dart
 |- base_widget.dart
 ```
+***shared/***
+shared berisikan segala variabel yang biasa digunakan berulang kali pada project, seperti variabel warna, format text, ukuran spasi pada project hingga ukurang padding
+
+***views/***
+semua tampilan per halaman pada project disimpan dalam folder views ini
+
+***widgets***
+widget berisikan komponen yang dapat berulang ulang dan beberapa bagian / pecahan dari views yang ingin didefine secara terpisah
+
+***base_widget.dart***
+base widget merupakan class default untuk melakukan komunikasi dengan viewmodels. Jika ingin jika diperlukan data dari api pada view, maka akan dibuat widget dengan extend basewidget pada view
 
 
 ## Cara Menggunakan Boilerplate
@@ -157,10 +170,29 @@ Beberapa link yang bermanfaat untuk mempelajari tentang flutter, sampel source o
 - [Facebook: Flutter Indonesia](https://www.facebook.com/groups/1738284952897937/?ref=bookmarks)
 
 
-## version
-- [dio] v3.0.4
-- [get_it] v3.0.3
-- [package_info] v0.4.0+13
-- [pigment] v1.0.3
-- [provider] v3.2.0
-- [shared_preferences] v0.5.3+5
+## Widget
+
+external widget yang digunakan pada boilerplate ini:
+
+- ***dio*** v3.0.4
+- ***get_it*** v3.0.3
+- ***package_info*** v0.4.0+13
+- ***pigment*** v1.0.3
+- ***provider*** v3.2.0
+- ***shared_preferences*** v0.5.3+5
+
+## current feature
+
+- ***prebuild state management***
+- ***MVVM Architecture***
+- ***hex color reader with pigment***
+- ***cache service with sharedpref***
+- ***connectivity status***
+
+## upcoming feature
+
+- ***interceptor example***
+- ***lifecycle manager***
+- ***service handler with get_it***
+- ***background fetch function***
+- ***change sharedpref to hive for cache***
